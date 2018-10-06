@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="../../assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
+    <title>Scrape the News</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-wrapper green z-depth-3">
+            <a href="/" class="brand-logo green center">Mongo Scraper</a>
+            <ul>
+                <li><a href="/scrape">Scrape</a></li>
+                <li><a href="https://github.com/VladKondrachuk/mongoScraper" target="_blank">Git Repo</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+
+    <main>
+        <div class="container">
+            {{{ body }}}
+        </div>
+    </main>
+
+    <footer class="page-footer green lighten-1">
+        <div class="footer-copyright green">
+            <div class="container">
+                <a class="grey-text text-lighten-4 right" href="/articles-json">Article JSON</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <script src="app.js"></script>
+</body>
+<html>

@@ -21,7 +21,7 @@ app.engine('handlebars', exphbs({
 app.set('view engine', 'handlebars');
 
 if (process.env.NODE_ENV == 'production') {
-    mongoose.connect('mongodb://heroku_l96d37j5:i8q22i10h0vr88j6ie7vdjpgs6@ds119370.mlab.com:19370/heroku_l96d37j5');
+    mongoose.connect('mongodb://vladkondrachuk:Omeg@100@ds125673.mlab.com:25673/heroku_859wzpc0');
 } else {
     mongoose.connect('mongodb://localhost/mongoHeadlines');
 }

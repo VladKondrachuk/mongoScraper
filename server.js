@@ -20,11 +20,8 @@ app.engine('handlebars', exphbs({
 }));
 app.set('view engine', 'handlebars');
 
-if (process.env.NODE_ENV == 'production') {
-    mongoose.connect('mongodb://vladkondrachuk:Omeg@100@ds125673.mlab.com:25673/heroku_859wzpc0');
-} else {
-    mongoose.connect('mongodb://localhost/mongoHeadlines');
-}
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/mongoHeadlines')
+
 var db = mongoose.connection;
 
 // Show any Mongoose errors
